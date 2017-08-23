@@ -73,7 +73,7 @@ public class Carpark implements ICarpark {
 
 	//setter method
 	@Override
-	public void recordAdhocTicketEntry() {
+	public void recordAdhocTicketEntry(IAdhocTicketDAO adhocTicketDAO) {
 		// TODO Auto-generated method stub
 		
 	}
