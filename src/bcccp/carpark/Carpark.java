@@ -47,7 +47,7 @@ public class Carpark implements ICarpark {
 	}
 
 
-
+	//Getter method
 	@Override
 	public String getName() {
 		return this.carparkID;
@@ -71,6 +71,7 @@ public class Carpark implements ICarpark {
 
 
 
+	//setter method
 	@Override
 	public void recordAdhocTicketEntry() {
 		// TODO Auto-generated method stub
