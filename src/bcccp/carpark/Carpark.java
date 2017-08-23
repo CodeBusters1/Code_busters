@@ -23,6 +23,8 @@ public class Carpark implements ICarpark {
 			ISeasonTicketDAO seasonTicketDAO) {
 		this.carparkId = name;
 		this.capacity = capacity;
+		this.adhocTicketDAO=adhocTicketDAO;
+		this.seasonTicketDAO=seasonTicketDAO;
 	}
 
 
