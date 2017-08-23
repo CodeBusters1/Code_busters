@@ -18,6 +18,7 @@ public class Carpark implements ICarpark {
 	
 	
 	
+	//Constructor and its implementations
 	public Carpark(String name, int capacity, 
 			IAdhocTicketDAO adhocTicketDAO, 
 			ISeasonTicketDAO seasonTicketDAO) {
