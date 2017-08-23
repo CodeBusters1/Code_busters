@@ -39,6 +39,7 @@ public class Carpark implements ICarpark {
 
 
 
+	//Setter method
 	@Override
 	public void deregister(ICarparkObserver observer) {
 		// TODO Auto-generated method stub
