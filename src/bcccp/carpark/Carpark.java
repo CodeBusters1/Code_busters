@@ -29,7 +29,7 @@ public class Carpark implements ICarpark {
 	}
 
 
-
+	//This is a setter method
 	@Override
 	public void register(ICarparkObserver observer) {
 		this.observers = observer;
