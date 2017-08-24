@@ -22,12 +22,16 @@ public class ExitController
 	private String seasonTicketId = null;
 	
 	
-
+	//ExitController Constructor and its implementation
 	public ExitController(Carpark carpark, IGate exitGate, 
 			ICarSensor is,
 			ICarSensor os, 
 			IExitUI ui) {
-		//TODO Implement constructor
+		this.carpark=carpark;
+		this.exitGate=exitGate;
+		this.insideSensor=is;
+		this.outsideSensor=os;
+		this.ui=ui;
 	}
 
 
