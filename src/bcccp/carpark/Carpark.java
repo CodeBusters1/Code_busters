@@ -41,7 +41,7 @@ public class Carpark implements ICarpark {
 
 	//Setter method
 	@Override
-	public void deregister(ICarparkObserver observer) {
+	public void deRegister(ICarparkObserver observer) {
 		this.observers = observer;
 		
 	}
