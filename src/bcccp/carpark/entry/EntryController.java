@@ -32,6 +32,7 @@ public class EntryController
 		this.carpark=carpark;
 		this.entryGate=entryGate;
 		this.outsideSensor=os;
+		this.insideSensor=is;
 	}
 
 
