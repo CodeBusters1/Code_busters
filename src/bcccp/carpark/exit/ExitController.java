@@ -28,6 +28,7 @@ public class ExitController
 			ICarSensor os, 
 			IExitUI ui) {
 		this.carpark=carpark;
+		this.exitGate=exitGate;
 	}
 
 
