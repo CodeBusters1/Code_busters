@@ -19,7 +19,7 @@ public class AdhocTicket implements IAdhocTicket {
 		//TDO Implement constructor
 		this.carparkId = carparkId;
 		this.ticketNo = ticketNo;
-		
+		this.barcode = barcode;
 		
 	}
 
