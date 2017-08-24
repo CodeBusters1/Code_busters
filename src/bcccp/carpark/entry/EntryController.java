@@ -33,6 +33,7 @@ public class EntryController
 		this.entryGate=entryGate;
 		this.outsideSensor=os;
 		this.insideSensor=is;
+		this.ui=ui;
 	}
 
 
