@@ -30,9 +30,8 @@ public class AdhocTicket implements IAdhocTicket {
 
 
 	@Override
-	public String getBarcode() {
-		// TODO Auto-generated method stub
-		return null;
+	public String getBarcode() {		
+		return barcode;
 	}
 
 
