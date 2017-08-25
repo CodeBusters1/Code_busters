@@ -102,6 +102,8 @@ public class EntryController
 		}else{
 			//If the outside sensor detects the car, lower the barrier and reset the screen
 			this.entryGate.lower();
+			//Starting to count time
+			entryTime=new Date().getTime();
 		}
 		
 		
