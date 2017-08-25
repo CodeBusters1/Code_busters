@@ -92,6 +92,8 @@ public class EntryController
 	@Override
 	public void carEventDetected(String detectorId, boolean detected) {
 	//if the outside sensor detects the car, show push button. else, lower the barrier
+		if(detected){
+		}
 		
 		
 		
