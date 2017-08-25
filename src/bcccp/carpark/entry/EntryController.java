@@ -74,6 +74,7 @@ public class EntryController
 		if(!this.carpark.isFull()){
 		this.entryGate.raise();
 		this.ui.display("Carpark isnot full");
+		this.ui.beep();
 		}
 		
 	}
