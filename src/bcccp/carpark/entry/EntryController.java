@@ -91,7 +91,7 @@ public class EntryController
 
 	@Override
 	public void carEventDetected(String detectorId, boolean detected) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
