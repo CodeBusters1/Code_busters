@@ -13,7 +13,7 @@ public class EntryController
 				   ICarparkObserver,
 		           IEntryController {
 	private static EntryController instance;
-	public static EntryController getinstance(){
+	public static EntryController getInstance(){
 		return instance;
 	
 	
