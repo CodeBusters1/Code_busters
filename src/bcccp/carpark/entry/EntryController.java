@@ -39,6 +39,7 @@ public class EntryController
 		this.outsideSensor=os;
 		this.insideSensor=is;
 		this.ui=ui;
+		this.instance=this;
 	}
 
 
