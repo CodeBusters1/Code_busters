@@ -46,6 +46,7 @@ public class EntryController
 
 	@Override
 	public void buttonPushed() {
+		//Check if the carpark is full
 		if(this.carpark.isFull()){
 		this.ui.display("Car is full");
 		}
