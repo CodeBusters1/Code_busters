@@ -10,6 +10,9 @@ public class UsageRecord implements IUsageRecord {
 	
 	public UsageRecord(String ticketId, long startDateTime) {
 		//TODO Implement constructor
+		this.ticketId = ticketId;
+		this.startDateTime = startDatetime;
+		
 	}
 
 
