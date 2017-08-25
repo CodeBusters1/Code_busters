@@ -21,6 +21,8 @@ public class UsageRecord implements IUsageRecord {
 	@Override
 	public void finalise(long endDateTime) {
 		// TODO Auto-generated method stub
+
+	// put end date and time of parking session
 		
 	}
 
