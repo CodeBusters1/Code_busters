@@ -73,6 +73,7 @@ public class EntryController
 		//adhoc ticket customer takes the ticket for which the barrier should be raised now.
 		if(!this.carpark.isFull()){
 		this.entryGate.raise();
+		this.ui.display("Carpark isnot full");
 		}
 		
 	}
