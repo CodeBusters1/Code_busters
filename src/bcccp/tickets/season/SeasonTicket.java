@@ -26,19 +26,20 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public String getId() {
-		// TODO Auto-generated method stub
+	// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public String getCarparkId() {
-		// TODO Auto-generated method stub
+	// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public long getStartValidPeriod() {
 		// TODO Auto-generated method stub
+		
 		return 0;
 	}
 
@@ -51,7 +52,13 @@ public class SeasonTicket implements ISeasonTicket {
 	@Override
 	public boolean inUse() {
 		// TODO Auto-generated method stub
+		If (carparkId = NULL)
+ 		{
+		return true;
+		print("Available");
+		else
 		return false;
+		print("Is In Use");
 	}
 
 	@Override
