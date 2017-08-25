@@ -27,7 +27,13 @@ public class SeasonTicket implements ISeasonTicket {
 	@Override
 	public String getId() {
 	// TODO Auto-generated method stub
+		If(ticketId=SeasonTicketId)
+		{
+		print("Season Ticket Is Inserted.Go Ahead");
+		else
+		print("Not Valid Id");
 		return null;
+		}
 	}
 
 	@Override
