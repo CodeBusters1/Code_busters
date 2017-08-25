@@ -3,7 +3,7 @@ package bcccp.tickets.season;
 public class UsageRecord implements IUsageRecord {
 	
 	String ticketId;
-	long startDateTime;
+	long startDateTime; // start date and time of parking session
 	long endDateTime;
 	
 	
