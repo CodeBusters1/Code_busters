@@ -51,7 +51,7 @@ public class EntryController
 		this.ui.display("Car is full");
 		}else{
 		this.adhocTicket=this.carpark.issueAdhocTicket();//adhoc ticket issue
-		this.ui.display("Take Ticket");//display
+		this.ui.display("Take Ticket");//display message
 		}
 	}
 
