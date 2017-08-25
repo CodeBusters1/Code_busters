@@ -95,6 +95,7 @@ public class EntryController
 		if(detectorId==this.outsideSensor.getId()){
 			if(detected){
 				//Display push button on the screen
+				this.ui.display("PUSH BUTTON")
 		}
 		
 		
