@@ -46,7 +46,8 @@ public class EntryController
 
 	@Override
 	public void buttonPushed() {
-		// TODO Auto-generated method stub
+		if(this.carpark.isFull()){
+		}
 		
 	}
 
