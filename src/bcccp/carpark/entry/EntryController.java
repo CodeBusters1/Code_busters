@@ -52,7 +52,7 @@ public class EntryController
 		}else{
 		this.adhocTicket=this.carpark.issueAdhocTicket();//adhoc ticket issue
 		this.ui.display("Take Ticket");//display message Take Ticket in user interface
-		this.ui.printTicket();
+		this.ui.printTicket(this.adhocTicket.);
 		}
 	}
 
