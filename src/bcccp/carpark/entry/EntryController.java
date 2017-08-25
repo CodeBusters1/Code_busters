@@ -53,6 +53,7 @@ public class EntryController
 		this.adhocTicket=this.carpark.issueAdhocTicket();//adhoc ticket issue
 		this.ui.display("Take Ticket");//display message Take Ticket in user interface
 		this.ui.printTicket(this.adhocTicket.getCarparkId(),this.adhocTicket.getTicketNo(),new Date().getTime(),this.adhocTicket.getBarCode());
+		this.adhocTicket.enter(new Date().getTime());
 		}
 	}
 
