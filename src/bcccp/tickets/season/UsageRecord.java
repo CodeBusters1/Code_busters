@@ -4,7 +4,7 @@ public class UsageRecord implements IUsageRecord {
 	
 	String ticketId;
 	long startDateTime; // start date and time of parking session
-	long endDateTime;
+	long endDateTime;   // end date and time of parking session
 	
 	
 	
