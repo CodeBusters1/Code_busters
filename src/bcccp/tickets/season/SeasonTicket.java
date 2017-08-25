@@ -31,7 +31,7 @@ public class SeasonTicket implements ISeasonTicket {
 		{
 		print("Season Ticket Is Inserted.Go Ahead");
 		else
-		print("Not Valid Id");
+		print("Not a Valid Ticket");
 		return null;
 		}
 	}
@@ -39,6 +39,7 @@ public class SeasonTicket implements ISeasonTicket {
 	@Override
 	public String getCarparkId() {
 	// TODO Auto-generated method stub
+	If 
 		return null;
 	}
 

@@ -3,13 +3,14 @@ package bcccp.tickets.season;
 public class UsageRecord implements IUsageRecord {
 	
 	String ticketId;
-	long startDateTime;
-	long endDateTime;
+	long startDateTime; // start date and time of parking session
+	long endDateTime;   // end date and time of parking session
 	
 	
 	
 	public UsageRecord(String ticketId, long startDateTime) {
 		//TODO Implement constructor
+		 // initialize variables with data passed in parameters
 		this.ticketId = ticketId;
 		this.startDateTime = startDatetime;
 		
