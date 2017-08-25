@@ -47,7 +47,7 @@ public class EntryController
 	@Override
 	public void buttonPushed() {
 		if(this.carpark.isFull()){
-		this.ui.display("Car is full);
+		this.ui.display("Car is full");
 		}
 		
 	}
