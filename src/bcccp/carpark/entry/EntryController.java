@@ -55,6 +55,7 @@ public class EntryController
 		this.ui.printTicket(this.adhocTicket.getCarparkId(),this.adhocTicket.getTicketNo(),new Date().getTime(),this.adhocTicket.getBarCode());
 		this.adhocTicket.enter(new Date().getTime());
 		}
+		System.out.println("Issuing Adhoc ticket");
 	}
 
 
