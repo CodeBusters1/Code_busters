@@ -49,8 +49,8 @@ public class EntryController
 		//Check if the carpark is full
 		if(this.carpark.isFull()){
 		this.ui.display("Car is full");
+		}else{
 		}
-		
 	}
 
 
