@@ -13,7 +13,9 @@ public class EntryController
 				   ICarparkObserver,
 		           IEntryController {
 	private static EntryController instance;
-	public static EntryController getinstance()
+	public static EntryController getinstance(){
+		return instance;
+	
 	
 	private IGate entryGate;
 	private ICarSensor outsideSensor; 
