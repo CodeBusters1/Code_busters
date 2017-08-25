@@ -70,7 +70,7 @@ public class EntryController
 
 	@Override
 	public void ticketTaken() {
-		// TODO Auto-generated method stub
+		//adhoc ticket customer takes the ticket for which the barrier should be raised now.
 		
 	}
 
