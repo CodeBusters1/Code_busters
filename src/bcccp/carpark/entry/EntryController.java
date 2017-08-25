@@ -50,7 +50,7 @@ public class EntryController
 		if(this.carpark.isFull()){
 		this.ui.display("Car is full");
 		}else{
-		this.adhocTicket=this.carpark.issueAdhocTicket();
+		this.adhocTicket=this.carpark.issueAdhocTicket();//adhoc ticket issue
 		}
 	}
 
