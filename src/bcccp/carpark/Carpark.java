@@ -18,34 +18,39 @@ public class Carpark implements ICarpark {
 	
 	
 	
+	//Constructor and its implementations
 	public Carpark(String name, int capacity, 
 			IAdhocTicketDAO adhocTicketDAO, 
 			ISeasonTicketDAO seasonTicketDAO) {
-		//TODO Implement constructor
+		this.carparkId = name;
+		this.capacity = capacity;
+		this.adhocTicketDAO=adhocTicketDAO;
+		this.seasonTicketDAO=seasonTicketDAO;
 	}
 
 
-
+	//This is a setter method
 	@Override
 	public void register(ICarparkObserver observer) {
-		// TODO Auto-generated method stub
+		this.observers = observer;
+		
 		
 	}
 
 
 
+	//Setter method
 	@Override
 	public void deregister(ICarparkObserver observer) {
-		// TODO Auto-generated method stub
+		this.observers = observer;
 		
 	}
 
 
-
+	//Getter method
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.carparkID;
 	}
 
 
@@ -66,8 +71,9 @@ public class Carpark implements ICarpark {
 
 
 
+	//setter method
 	@Override
-	public void recordAdhocTicketEntry() {
+	public void recordAdhocTicketEntry(IAdhocTicketDAO adhocTicketDAO) {
 		// TODO Auto-generated method stub
 		
 	}

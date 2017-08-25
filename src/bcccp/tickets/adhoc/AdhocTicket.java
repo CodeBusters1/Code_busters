@@ -14,29 +14,31 @@ public class AdhocTicket implements IAdhocTicket {
 
 	
 	
-	public AdhocTicket(String carparkId, int ticketNo, String barcode) {
-		//TDO Implement constructor
+	//constructor
+	public AdhocTicket(String carparkId, int ticketNo, String barcode) {		
+		this.carparkId = carparkId;
+		this.ticketNo = ticketNo;
+		this.barcode = barcode;
+		
 	}
 
 
 	@Override
-	public int getTicketNo() {
-		// TODO Auto-generated method stub
-		return 0;
+	public int getTicketNo() {				
+		return ticketNo;
 	}
 
 
 	@Override
-	public String getBarcode() {
-		// TODO Auto-generated method stub
-		return null;
+	public String getBarcode() {		
+		return barcode;
 	}
 
 
 	@Override
 	public String getCarparkId() {
 		// TODO Auto-generated method stub
-		return null;
+		return carparkId;
 	}
 
 
