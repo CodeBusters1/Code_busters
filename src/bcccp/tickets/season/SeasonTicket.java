@@ -21,6 +21,7 @@ public class SeasonTicket implements ISeasonTicket {
 		//TDO Implement constructor
 		this.carparkId=carparkId;
 		this.startValidPeriod=startValidPeriod;
+		this.endValidPeriod=endValidPeriod;
 	}
 
 	@Override
