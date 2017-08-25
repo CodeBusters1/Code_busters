@@ -94,7 +94,7 @@ public class EntryController
 	//if the outside sensor detects the car, show push button. else, lower the barrier
 		if(detectorId==this.outsideSensor.getId()){
 			if(detected){
-				
+				//Display push button on the screen
 		}
 		
 		
