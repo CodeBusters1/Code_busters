@@ -15,6 +15,7 @@ public class EntryController
 	private static EntryController instance;
 	public static EntryController getInstance(){
 		return instance;
+	}
 	
 	
 	private IGate entryGate;
