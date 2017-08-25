@@ -96,6 +96,9 @@ public class EntryController
 			if(detected){
 				//Display push button on the screen
 				this.ui.display("PUSH BUTTON");
+			}else{
+				this.ui.display("");
+			}
 		}
 		
 		
