@@ -12,6 +12,7 @@ public class EntryController
 		implements ICarSensorResponder,
 				   ICarparkObserver,
 		           IEntryController {
+	private static EntryController instance;
 	
 	private IGate entryGate;
 	private ICarSensor outsideSensor; 
