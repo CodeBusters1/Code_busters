@@ -29,7 +29,7 @@ public class EntryController
 	private String seasonTicketId = null;
 	
 	
-
+	//Constructor implementation
 	public EntryController(Carpark carpark, IGate entryGate, 
 			ICarSensor os, 
 			ICarSensor is,
