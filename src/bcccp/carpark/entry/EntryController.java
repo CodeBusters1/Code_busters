@@ -71,6 +71,8 @@ public class EntryController
 	@Override
 	public void ticketTaken() {
 		//adhoc ticket customer takes the ticket for which the barrier should be raised now.
+		if(!this.carpark.isFull()){
+		}
 		
 	}
 
