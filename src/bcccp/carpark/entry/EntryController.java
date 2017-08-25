@@ -99,6 +99,9 @@ public class EntryController
 			}else{
 				this.ui.display("");
 			}
+		}else{
+			//If the outside sensor detects the car, lower the barrier and reset the screen
+			
 		}
 		
 		
