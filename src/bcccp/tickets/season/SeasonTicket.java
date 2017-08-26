@@ -25,11 +25,11 @@ public class SeasonTicket implements ISeasonTicket {
 		this.startValidPeriod = startValidPeriod;
 		this.endValidPeriod = endValidPeriod;
 	}
-
+	// getter 
 	@Override
 	public String getId() {
 		// TODO Auto-generated method stub
-		return null;
+		return ticketId;
 	}
 
 	@Override
