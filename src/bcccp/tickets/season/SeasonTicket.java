@@ -21,6 +21,7 @@ public class SeasonTicket implements ISeasonTicket {
 			             long endValidPeriod) {
 		
 		this.ticketId = ticketId;
+		this.carparkId = carparkId;
 	}
 
 	@Override
