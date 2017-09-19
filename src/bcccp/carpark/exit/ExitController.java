@@ -22,7 +22,7 @@ public class ExitController
 	private String seasonTicketId = null;
 	
 	
-
+	//ExitController Constructor and its implementation
 	public ExitController(Carpark carpark, IGate exitGate, 
 			ICarSensor is,
 			ICarSensor os, 

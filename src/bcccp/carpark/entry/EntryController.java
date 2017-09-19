@@ -12,6 +12,11 @@ public class EntryController
 		implements ICarSensorResponder,
 				   ICarparkObserver,
 		           IEntryController {
+	private static EntryController instance;
+	public static EntryController getInstance(){
+		return instance;
+	}
+	
 	
 	private IGate entryGate;
 	private ICarSensor outsideSensor; 
@@ -24,7 +29,7 @@ public class EntryController
 	private String seasonTicketId = null;
 	
 	
-
+	//Constructor implementation
 	public EntryController(Carpark carpark, IGate entryGate, 
 			ICarSensor os, 
 			ICarSensor is,
@@ -34,14 +39,23 @@ public class EntryController
 		this.outsideSensor=os;
 		this.insideSensor=is;
 		this.ui=ui;
+		this.instance=this;
 	}
 
 
 
 	@Override
 	public void buttonPushed() {
-		// TODO Auto-generated method stub
-		
+		//Check if the carpark is full
+		if(this.carpark.isFull()){
+		this.ui.display("Car is full");
+		}else{
+		this.adhocTicket=this.carpark.issueAdhocTicket();//adhoc ticket issue
+		this.ui.display("Take Ticket");//display message Take Ticket in user interface
+		this.ui.printTicket(this.adhocTicket.getCarparkId(),this.adhocTicket.getTicketNo(),new Date().getTime(),this.adhocTicket.getBarCode());
+		this.adhocTicket.enter(new Date().getTime());
+		}
+		System.out.println("Issuing Adhoc ticket");
 	}
 
 
@@ -56,7 +70,12 @@ public class EntryController
 
 	@Override
 	public void ticketTaken() {
-		// TODO Auto-generated method stub
+		//adhoc ticket customer takes the ticket for which the barrier should be raised now.
+		if(!this.carpark.isFull()){
+		this.entryGate.raise();
+		this.ui.display("Carpark isnot full");
+		this.ui.beep();
+		}
 		
 	}
 
@@ -69,10 +88,25 @@ public class EntryController
 	}
 
 
-
+	//Both the outside and inside method call this method when detecting a car
 	@Override
 	public void carEventDetected(String detectorId, boolean detected) {
-		// TODO Auto-generated method stub
+	//if the outside sensor detects the car, show push button. else, lower the barrier
+		if(detectorId==this.outsideSensor.getId()){
+			if(detected){
+				//Display push button on the screen
+				this.ui.display("PUSH BUTTON");
+			}else{
+				this.ui.display("");
+			}
+		}else{
+			//If the outside sensor detects the car, lower the barrier and reset the screen
+			this.entryGate.lower();
+			//Starting to count time
+			entryTime=new Date().getTime();
+		}
+		
+		
 		
 	}
 
